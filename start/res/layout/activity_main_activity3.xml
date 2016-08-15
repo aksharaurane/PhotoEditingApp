@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/hello_world" />
+
+    <ImageView
+        android:id="@+id/iv_ttx"
+        android:layout_width="10px"
+        android:layout_height="10px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/et_txt"
+        android:scaleType="fitXY"
+         />
+
+    <EditText
+        android:id="@+id/et_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_clr_all"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/btn_clr_all"
+        android:text="WCE SANGLI"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_save_image"
+        android:layout_alignBottom="@+id/btn_save_image"
+        android:layout_alignLeft="@+id/textView1"
+        android:text="Load" />
+
+    <Button
+        android:id="@+id/btn_save_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iv_ttx"
+        android:layout_toRightOf="@+id/button1"
+        android:text="Save"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_clr_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btn_save_image"
+        android:text="Back"
+        android:textSize="14sp" />
+
+</RelativeLayout>

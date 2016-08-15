@@ -1,0 +1,64 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" >
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:text="Color" />
+
+     <TextView
+         android:id="@+id/textView2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:text="Source" />
+
+     <Button
+         android:id="@+id/button1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_marginLeft="14dp"
+         android:layout_toRightOf="@+id/textView1"
+         android:text="Load" />
+
+     <Button
+         android:id="@+id/button2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:text="Save" />
+
+     <Button
+         android:id="@+id/button3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_toLeftOf="@+id/textView2"
+         android:text="Back" />
+ </RelativeLayout>
+
+ <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+  <TextView android:id="@+id/rtext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R" android:layout_alignParentLeft="true" /> 
+  <Spinner android:id="@+id/ropt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" /> 
+  <SeekBar android:id="@+id/bar1" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="255" android:progress="255" android:layout_toRightOf="@id/rtext" android:layout_toLeftOf="@id/ropt" /> 
+  </RelativeLayout>
+ <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+  <TextView android:id="@+id/gtext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="G" android:layout_alignParentLeft="true" /> 
+  <Spinner android:id="@+id/gopt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" /> 
+  <SeekBar android:id="@+id/bar2" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="255" android:progress="255" android:layout_toRightOf="@id/gtext" android:layout_toLeftOf="@id/gopt" /> 
+  </RelativeLayout>
+ <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+  <TextView android:id="@+id/btext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="B" android:layout_alignParentLeft="true" /> 
+  <Spinner android:id="@+id/bopt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" /> 
+  <SeekBar android:id="@+id/bar3" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="255" android:progress="255" android:layout_toRightOf="@id/btext" android:layout_toLeftOf="@id/bopt" /> 
+  </RelativeLayout>
+  <TextView android:id="@+id/colorinfo" android:layout_width="wrap_content" android:layout_height="wrap_content" /> 
+  <ImageView android:id="@+id/result" android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@string/hello_world" /> 
+  </LinearLayout>

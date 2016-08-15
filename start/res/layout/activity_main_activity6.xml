@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:autoLink="web"
+        android:text="http://android-er.blogspot.com/"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/loadimage1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load_image 1" />
+
+    <TextView
+        android:id="@+id/sourceuri1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/loadimage2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load_image 2" />
+
+    <TextView
+        android:id="@+id/sourceuri2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/processing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Processing" />
+
+    <ImageView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+         android:contentDescription="@string/hello_world"
+        android:layout_height="match_parent" />
+    
+</LinearLayout>
+
